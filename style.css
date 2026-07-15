@@ -256,6 +256,10 @@ header {
   gap: 0.4rem;
 }
 
+.personal-website {
+  margin-bottom: 2.5rem;
+}
+
 .personal-website p {
   color: var(--text-muted);
   margin: 0.8rem 0;
