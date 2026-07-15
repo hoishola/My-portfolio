@@ -168,20 +168,51 @@ header {
   max-width: 550px;
 }
 
-.about-img {
-  width: 280px;
-  height: 350px;
-  object-fit: cover;
+.code-window {
+  width: 320px;
+  background-color: #1a1f2e;
   border-radius: 8px;
-  filter: grayscale(100%);
-  transform: translateX(0);
-  transition: filter 0.4s ease-in-out, transform 0.4s ease-in-out;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  font-family: 'Courier New', monospace;
 }
 
-.about-img:hover {
-  filter: grayscale(0%);
-  transform: translateX(-10px);
+.code-window-header {
+  display: flex;
+  gap: 6px;
+  padding: 10px 14px;
+  background-color: #11162080;
 }
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot.red { background-color: #ff5f56; }
+.dot.yellow { background-color: #ffbd2e; }
+.dot.green { background-color: #27c93f; }
+
+.code-window-body {
+  padding: 1.2rem 1.5rem;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.code-window-body p {
+  margin: 0.2rem 0;
+  color: var(--text-primary);
+}
+
+.code-indent {
+  padding-left: 1.5rem;
+}
+
+.code-keyword { color: #ff79c6; }
+.code-var { color: #8be9fd; }
+.code-key { color: #64ffda; }
+.code-string { color: #f1fa8c; }
 
 .skills {
   display: grid;
