@@ -281,6 +281,12 @@ header {
   padding: 2rem 0;
 }
 
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
 .sayhello-btn {
   background-color: var(--bg-main);
   border: 1px solid var(--green);
